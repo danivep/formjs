@@ -2,6 +2,3 @@
 // bttns
 // bttns func
 
-var form = {
-    
-}

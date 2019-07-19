@@ -1,3 +1,15 @@
-.mainForm {
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.mainForm,
+fieldset,
+input,
+button {
+    border: none;
+    background-color: transparent;
     display: inline-flex;
 }
+

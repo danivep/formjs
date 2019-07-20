@@ -34,17 +34,34 @@ input {
     border: 0 solid black;
     color: white;
     background-color: black;
-
-    transition: all .3s linear;
 }
 
 /* Animation */
 
-.submitAnimation:active {
-    transform: translateX(598px);
+/* .submitAnimation:active {
+    transform: translate(598px, 0);
     background-color: #f7cac9;
+} */
+
+/* .submitAnimation{
+	animation-name: submitAnimation;
+	-webkit-animation-name: submitAnimation;	
+
+	animation-duration: 0.7s;	
+	-webkit-animation-duration: 0.7s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+    visibility: visible !important;
+    animation-iteration-count: 1;	
 }
 
-.submitAnimation:after {
-    transform: translateX(5px);
-}
+@keyframes submitAnimation {
+	0% {
+		transform: translateX(0);
+    }	
+	100% {
+        transform: translateX(598px);
+    }
+} */

@@ -38,12 +38,9 @@ input {
 
 /* Animation */
 
-/* .submitAnimation:active {
-    transform: translate(598px, 0);
-    background-color: #f7cac9;
-} */
 
-/* .submitAnimation{
+
+.submitAnimation{
 	animation-name: submitAnimation;
 	-webkit-animation-name: submitAnimation;	
 
@@ -54,7 +51,8 @@ input {
 	-webkit-animation-timing-function: ease-in-out;		
 
     visibility: visible !important;
-    animation-iteration-count: 1;	
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;	
 }
 
 @keyframes submitAnimation {
@@ -64,4 +62,4 @@ input {
 	100% {
         transform: translateX(598px);
     }
-} */
+}

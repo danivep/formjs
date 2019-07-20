@@ -34,6 +34,17 @@ input {
     border: 0 solid black;
     color: white;
     background-color: black;
+
+    transition: all .3s linear;
 }
 
+/* Animation */
 
+.submitAnimation:active {
+    transform: translateX(598px);
+    background-color: #f7cac9;
+}
+
+.submitAnimation:after {
+    transform: translateX(5px);
+}

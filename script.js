@@ -1,4 +1,2 @@
-// store input
-// bttns
-// bttns func
-
+// input sent to user mail
+// 

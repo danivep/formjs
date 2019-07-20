@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form id="contactForm" class="mainForm">
-        <fieldset>
-            <input placeholder="Email" type="email" tabindex="">
-        </fieldset>
-        
-        <fieldset>
-            <input placeholder="Name" type="number">
-        </fieldset>
 
-        <fieldset>
-            <input placeholder="Phone" type="number">
-        </fieldset>
+    <form class="formContainer">    
+        <button class="submitButton" data-submit="...sending" name="submit" type="submit">שלח</button>
 
-        <fieldset>
-            <button id="contantSubmit" data-submit="...sending" name="submit" type="submit">Submit</button>
+        <fieldset class="fieldsetInput">
+            <input placeholder="מייל" type="email" tabindex="">
+            <input placeholder="טלפון" type="number">
+            <input placeholder="שם" type="text">
         </fieldset>
     </form>
+
 </body>
 <script src="script.js"></script>
 </html>

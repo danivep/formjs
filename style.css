@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* Contact form style */
+/* -------------------- Contact form style -------------------- */
 .formContainer {
     width: 650px;
     padding: 1px;
@@ -27,6 +27,7 @@ input {
 }
 
 .submitButton {
+    position: relative;
     width: 50px;
     height: 50px;
     margin: 1px;
@@ -36,30 +37,33 @@ input {
     background-color: black;
 }
 
-/* Animation */
 
 
+/* -------------------- Animation -------------------- */
 
 .submitAnimation{
 	animation-name: submitAnimation;
 	-webkit-animation-name: submitAnimation;	
 
-	animation-duration: 0.7s;	
-	-webkit-animation-duration: 0.7s;
+	animation-duration: 1s;	
 
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-    visibility: visible !important;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;	
+    /* visibility: visible !important; */
 }
 
 @keyframes submitAnimation {
-	0% {
-		transform: translateX(0);
-    }	
-	100% {
-        transform: translateX(598px);
-    }
+    0% {background-color: black; left: 0px; top: 0px;}
+    100% {background-color: orange; left: 598px; top: 0px;}
 }
+
+
+/* .curtainAnimation {
+    animation-name: curtainAnimation;
+    -webkit-animation-name: curtainAnimation;
+
+    animation-duration: 1s;
+}
+
+@keyframes curtainAnimation {
+    0% {background-color: #333; width: 0px; height: 52px; left: 0px; top: 0px;}
+    100% {background-color: #686868; width: 598px; height: 52px; left: 0px; top: 0px;}
+} */

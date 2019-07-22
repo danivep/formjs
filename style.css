@@ -48,10 +48,14 @@ input {
 
 /* -------------------- Animation -------------------- */
 
-.submitAnimation{
+.submitAnimation {
 	animation-name: submitAnimation;
 	-webkit-animation-name: submitAnimation;	
-	animation-duration: 1s;
+    animation-duration: 1s;
+    /* animation: submitAnimation 1s linear 1 normal backwards; */
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: backwards; */
+    /* animation-delay: 1s; */
 }
 
 @keyframes submitAnimation {
@@ -63,9 +67,12 @@ input {
     animation-name: curtainAnimation;
     -webkit-animation-name: curtainAnimation;
     animation-duration: 1s;
+    /* animation: curtainAnimation 1s linear 0s 1 normal backwards; */
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: backwards; */
 }
 
 @keyframes curtainAnimation {
-    0% {background-color: rgb(187, 187, 187); width: 0px; height: 52px; left: 0px;}
+    0% {background-color: #d3d3d3; width: 0px; height: 52px; left: 0px;}
     100% {background-color: #d3d3d3; width: 560px; height: 52px; left: 0px;}
 }

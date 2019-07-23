@@ -25,10 +25,12 @@ input {
     border-bottom: 1px solid black;
     margin: 0px 0px 0px 10px;
     width: 150px;
+    text-align: end;
 }
 
 .submitButton {
     position: relative;
+    font-size: 16px;
     width: 50px;
     height: 50px;
     margin: 1px;
@@ -50,10 +52,17 @@ input {
     animation-duration: 4s;
 }
 
-/* .messageAnimation {
-    position: absolute;
+.messageAnimation {
     visibility: hidden;
-} */
+    position: absolute;
+    left: 0px;
+    top: 16px;
+
+    animation-name: messageTextAnimation;
+    -webkit-animation-name: messageTextAnimation;
+
+    animation-duration: 4s;
+}
 
 .buttonAnimation {
     /* animation control */
@@ -67,13 +76,21 @@ input {
 
 @keyframes submitAnimation {
     0% {background-color: black; left: 0px; top: 0px;}
-    20% {background-color: orange; left: 548px; top: 0px;}
-    100% {background-color: orange; left: 548px; top: 0px;}
+    20% {background-color: #ff8800; left: 548px; top: 0px;}
+    100% {background-color: #ff8800; left: 548px; top: 0px;}
 }
 
 
 @keyframes curtainAnimation {
-    0% {background-color: #d3d3d3; width: 0px; height: 52px; left: 0px;}
-    20% {background-color: #d3d3d3; width: 560px; height: 52px; left: 0px;}
-    100% {background-color: #d3d3d3; width: 560px; height: 52px; left: 0px;}
+    0% {background-color: #ffffff; width: 0px; height: 52px; left: 0px;}
+    20% {background-color: #ffffff; width: 560px; height: 52px; left: 0px;}
+    100% {background-color: #ffffff; width: 560px; height: 52px; left: 0px;}
+}
+
+@keyframes messageTextAnimation {
+    0% {width: 0px; height: 0px; left: 0px;}
+    8% {width: 200px; height: 0px; left: 0px; visibility: hidden;}
+    20% {color:#ff8800; width: 200px; height: 20px; left: 280px; visibility: visible;}
+    100% {color: #ff8800; width: 200px; height: 20px; left: 300px;}
+    
 }

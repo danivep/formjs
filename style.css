@@ -43,36 +43,37 @@ input {
     border-radius: 100px;
     top: -1px;
     left: 0;
+
+    /* animation control */
+    animation-name: curtainAnimation;
+    -webkit-animation-name: curtainAnimation;
+    animation-duration: 4s;
+}
+
+/* .messageAnimation {
+    position: absolute;
+    visibility: hidden;
+} */
+
+.buttonAnimation {
+    /* animation control */
+	animation-name: submitAnimation;
+	-webkit-animation-name: submitAnimation;	
+    animation-duration: 4s;
 }
 
 
 /* -------------------- Animation -------------------- */
 
-.submitAnimation {
-	animation-name: submitAnimation;
-	-webkit-animation-name: submitAnimation;	
-    animation-duration: 1s;
-    /* animation: submitAnimation 1s linear 1 normal backwards; */
-    /* animation-iteration-count: 1; */
-    /* animation-fill-mode: backwards; */
-    /* animation-delay: 1s; */
-}
-
 @keyframes submitAnimation {
     0% {background-color: black; left: 0px; top: 0px;}
+    20% {background-color: orange; left: 548px; top: 0px;}
     100% {background-color: orange; left: 548px; top: 0px;}
 }
 
-.curtainAnimation {
-    animation-name: curtainAnimation;
-    -webkit-animation-name: curtainAnimation;
-    animation-duration: 1s;
-    /* animation: curtainAnimation 1s linear 0s 1 normal backwards; */
-    /* animation-iteration-count: 1; */
-    /* animation-fill-mode: backwards; */
-}
 
 @keyframes curtainAnimation {
     0% {background-color: #d3d3d3; width: 0px; height: 52px; left: 0px;}
+    20% {background-color: #d3d3d3; width: 560px; height: 52px; left: 0px;}
     100% {background-color: #d3d3d3; width: 560px; height: 52px; left: 0px;}
 }

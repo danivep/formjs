@@ -7,7 +7,7 @@
 
 <body>
 
-    <form class="formContainer">
+    <form class="formContainer" action="contactform.php" method="POST">
 
         <div class="curtainAnimation"></div>
         
@@ -16,9 +16,9 @@
         <div class="messageAnimation">נחזור אליכם בהקדם האפשרי</div>
 
         <fieldset class="fieldsetInput">
-            <input placeholder="מייל" type="email">
-            <input placeholder="טלפון" type="number">
-            <input placeholder="שם" type="text">
+            <input placeholder="מייל" type="email" name="mail">
+            <input placeholder="טלפון" type="tel" name="phone">
+            <input placeholder="שם" type="text" name="name">
         </fieldset>
         
     </form>
